@@ -1,0 +1,26 @@
+Database:
+  User: "root"
+  Password: "12345678"
+  Host: "localhost"
+  Port: 3306
+  Schema: "backend"
+  MaxIdleConn: 20
+  MaxOpenConn: 5
+Server:
+  Address: "0.0.0.0"
+  Port: 8888
+Log:
+  Filename: "/tmp/backend.log"
+  MaxSize: 500
+  MaxAge: 30
+  MaxBackups: 10
+  Localtime: true
+  Compress: true
+  CallerSkip: 3
+  Level: "DEBUG"
+  Console: "stdout"
+GormLog:
+  GormLevel: "info"
+  SqlSlowThreshold: 300
+  IgnoreRecordNotFoundError: false
+  IgnoreDuplicateError: false
