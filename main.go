@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+
 	"github.com/leeeo2/backend/pkg/common/config"
 	"github.com/leeeo2/backend/pkg/common/logger"
 	"github.com/leeeo2/backend/pkg/model"

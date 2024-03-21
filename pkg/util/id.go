@@ -1,4 +1,4 @@
-package id
+package util
 
 import (
 	"crypto/md5"
@@ -77,7 +77,7 @@ func low() []byte {
 }
 
 // generate a 20 bytes uuid ,you can add a prefix if necessary
-func NewWithPrefix(prefix string) string {
+func New20BytesIdWithPrefix(prefix string) string {
 	b := strings.Builder{}
 	b.Grow(len(prefix) + 20)
 	high := strconv.FormatUint(binary.BigEndian.Uint64(high()), 36)
